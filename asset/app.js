@@ -19,10 +19,10 @@ new Vue({
       3: 'blue'
     },
     audios: [
-      new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3'),
-      new Audio('https://s3.amazonaws.com/freecodecamp/simonSound2.mp3'),
-      new Audio('https://s3.amazonaws.com/freecodecamp/simonSound3.mp3'),
-      new Audio('https://s3.amazonaws.com/freecodecamp/simonSound4.mp3')
+      new Audio('asset/audios/simonSound1.mp3'),
+      new Audio('asset/audios/simonSound2.mp3'),
+      new Audio('asset/audios/simonSound3.mp3'),
+      new Audio('asset/audios/simonSound4.mp3')
     ],
     steps: [],
     playerSteps: []
