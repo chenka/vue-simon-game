@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue - Simon® Game </title>
+  <script src="asset/vue.min.js"></script>
+  <script src="asset/lodash.min.js"></script>
+  <link rel="stylesheet" href="asset/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="asset/app.css">
+</head>
+<body>
+  <div id="app" class="container">
+    <div class="frame">
+      <div class="panel text-center">
+        <div class="row">
+          <h1 class="game-name">Simon<span class="small">&reg;
+</span></h1>
+        </div>
+        <div class="row button-group">
+          <div class="col-xs-4">
+            <div class="score">{{ count }}</div>
+            <div class="text count">COUNT</div>
+          </div>
+          <div class="col-xs-4">
+            <div class="panel-button start" @click="start"></div>
+            <div class="text">START</div>
+          </div>
+          <div class="col-xs-4" style="font-weight: ligher;">
+            <div class="strict-mode" :class="{'strict-on': strictMode}"></div>
+            <div class="panel-button strict" @click="strictOn"></div>
+            <div class="text">STRICT</div>
+          </div>
+        </div>
+        <div class="row power">
+          OFF <div @click="toggleSwitch" class="slider"><div class="switch" :class="{'float-right': switchOn}"></div></div> ON
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="green button col-xs-5" 
+            @mousedown="playAudio(0)" 
+            :class="{'green-active': greenActive, 'button-disabled': locking}"></div>
+        <div class="y-frame col-xs-2"></div>
+        <div class="red button col-xs-5" @mousedown="playAudio(1)" 
+            :class="{'red-active': redActive, 'button-disabled': locking}"></div>
+      </div>
+      <div class="row x-frame"></div>
+      <div class="row">
+        <div class="yellow button col-xs-5" @mousedown="playAudio(2)" 
+            :class="{'yellow-active': yellowActive, 'button-disabled': locking}"></div>
+        <div class="y-frame col-xs-2"></div>
+        <div class="blue button col-xs-5" @mousedown="playAudio(3)"
+            :class="{'blue-active': blueActive, 'button-disabled': locking}"
+            ></div>
+      </div>
+    </div>
+    <footer class="text-center">Created by <a href="https://www.linkedin.com/in/sarunyhot" target="_blank" class="hilight">Kao</a> | <a href="https://github.com/chenka/vue-simon-game" target="_blank" class="hilight">Github</a></footer>
+  </div>
+  <script src="asset/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+body {
+  background-image: url('background.png');
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.float-right {
+  float: right;
+}
+.panel {
+  position: absolute;
+  background: white;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  z-index: 5;
+  margin: 115px;
+  border: 10px solid #232020;
+  padding: 10px;
+}
+
+.panel .small {
+  position: relative;
+  top: -25px;
+  right: 8px;
+  font-size: 20px;
+}
+
+.score {
+  font-size: 20px;
+  width: 50px;
+  height: 30px;
+  background: #500404;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 2px solid black;
+  color: red;
+}
+.game-name {
+  font-size: 50px;
+  font-weight: bolder;
+  margin-left: 25px;
+}
+
+.panel-button {
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 22px;
+  height: 22px;
+  background: red;
+  border-radius: 50%;
+  border: 3px solid #232020;
+  box-shadow: 0px 2px 1px #232020;
+  cursor: pointer;
+}
+
+.panel-button:active {
+  transform: translate(0px, 1px);
+  box-shadow: 0px 0px 1px #232020;
+}
+
+.panel-button.strict {
+  background: yellow;
+}
+
+.panel .text{
+  font-size: 0.8em;
+  margin-top: 10px;
+}
+
+.button-group {
+  margin-bottom: 10px;
+}
+
+.panel .score {
+  margin-bottom: -3px;
+}
+
+.slider {
+  background: black;
+  width: 40px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.switch {
+  background: deepskyblue;
+  width: 16px;
+  height: 16px;
+  margin: 2px 1px 1px 1px;
+  border-radius: 3px;
+}
+
+.strict-mode {
+  width: 10px;
+  height: 10px;
+  background: black;
+  left: 30px;
+  top: -10px;
+  border-radius: 50%;
+  position: absolute;
+  border: 2px solid black;
+}
+
+.strict-on {
+  background: red;
+}
+
+.frame {
+  background: #333;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  box-shadow: 0px 0px 15px #232020;
+  border: 25px solid #232020;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.x-frame {
+  background: #232020;
+  height: 25px;
+}
+
+.y-frame {
+  background: #232020;
+  width: 25px;
+  height: 230px;
+}
+
+.button {
+  width: 220px;
+  height: 240px;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.green, .red {
+  height: 230px;
+}
+
+.green {
+  background: darkgreen;
+}
+
+.green:active, .green-active {
+  background: green;
+}
+
+.red {
+  background: darkred;
+}
+
+.red:active, .red-active {
+  background: red;
+}
+
+.yellow{
+  background: yellowgreen;
+}
+
+.yellow:active, .yellow-active {
+  background: yellow;
+}
+
+.blue {
+  background: darkblue;
+}
+
+.blue:active, .blue-active {
+  background: blue;
+}
+
+.button-disabled {
+  cursor: default;
+}
+
+footer {
+  margin-top: 30px;
+}
+
+footer a {
+  color: darkred;
+}
